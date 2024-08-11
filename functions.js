@@ -47,11 +47,17 @@ function submit_button_click(){
 
     if(!isNaN(bmi) && height!=0.0){
         document.getElementById("result").style.display='block';
-        document.getElementById("bmi").textContent="Your BMI = "+bmi;
+        document.getElementById("bmi").textContent="Your BMI is = "+bmi;
+        document.getElementById("reload").style.display='inline';
     }
     else{
-        document.getElementById("result").style.display='none';
-        document.getElementById("bmi").textContent="Please enter correct values for height and weight";
+        // document.getElementById("result").style.display='block';
+        document.getElementById("result").textContent="Please enter correct values for height and weight";
     }
 
+}
+
+function refreshPage(){
+    location.reload();
+    document.getElementById("reload").style.display='none';
 }
