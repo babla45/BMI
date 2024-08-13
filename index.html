@@ -59,14 +59,27 @@
 
     <br><br>
     <input id="submitButton" type="submit" onclick="submit_button_click()">
-    <button id="reload" onclick="refreshPage()">Refresh</button>
+    <button id="refresh" onclick="refreshPage()">Refresh</button>
 
     <!-- --------------------------------- -->
 
     <br>
     <p id="result">Result will be shown here</p>
 
-    <p id="bmi"></p>
+    <!-- <p id="bmi"></p> -->
+
+
+
+
+    <div id="indicator" contenteditable="true">
+        <p id="bmi" style="text-align: center;">hello babla </p>
+        <level id="underweight">Underweight: BMI less than 18.5</level> <br>
+        <level id="normal">Normal : BMI between 18.5 and 24.9</level> <br>
+        <level id="overweight">Overweight: BMI between 25 and 29.9 </level> <br>
+        <level id="obese">Obese: BMI 30 or greater </level> <br>
+    
+    </div>
+    
 
 
 

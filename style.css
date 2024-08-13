@@ -42,7 +42,7 @@ b{
     cursor: pointer;
 }
 /* Refresh button styling */
-#reload {
+#refresh {
     padding: 10px 20px;
     background-color: #1f27f7;
     color: white;
@@ -64,12 +64,29 @@ b{
     font-weight: bold;
     padding: 10px;
     /* display: none; */
-    color: #ee1d1d;
+    color: #1b86ce;
 }
 
 /* BMI paragraph styling */
-#bmi {
+#bmi{
     font-size: 24px;
     font-weight: bold;
-    color: #a424b5;
+    color: #09000a;
+    background-color: #3eb9f6;
 }
+
+
+
+#indicator {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    font-family: serif;
+    color: #ffffff;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 50px;
+    border: 3px solid #ccc;
+    display: none;
+}
+

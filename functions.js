@@ -46,14 +46,41 @@ function submit_button_click(){
     bmi=Math.ceil(bmi*100)/100;
 
     if(!isNaN(bmi) && height!=0.0){
-        document.getElementById("result").style.display='block';
+        // document.getElementById("result").style.display='block';
+        document.getElementById("indicator").style.display='inline-block';
         document.getElementById("bmi").textContent="Your BMI is = "+bmi;
-        document.getElementById("reload").style.display='inline';
+        document.getElementById("refresh").style.display='inline';
     }
     else{
-        // document.getElementById("result").style.display='block';
+        document.getElementById("indicator").style.display='none';
         document.getElementById("result").textContent="Please enter correct values for height and weight";
     }
+
+    var white='white';
+
+    document.getElementById("underweight").style.cssText="color:white; background-color:black;";
+    document.getElementById("normal").style.cssText="color:white; background-color:black";
+    document.getElementById("overweight").style.cssText="color:white; background-color:black";
+    document.getElementById("obese").style.cssText="color:white; background-color:black";
+
+    if(bmi<=18.5)
+    {
+        document.getElementById("underweight").style.cssText='color:black; background-color:#fe0988;';
+    }
+    else if(bmi<=24.9)
+    {
+        document.getElementById("normal").style.cssText='color:black; background-color:#fe0988;';
+    }
+    else if(bmi<=29.9)
+    {        
+        document.getElementById("overweight").style.cssText='color:black; background-color:#fe0988;';
+    }
+    else
+    {
+        document.getElementById("obese").style.cssText='color:black;background-color:#fe0988;';
+    }
+
+
 
 }
 
