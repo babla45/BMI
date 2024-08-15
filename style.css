@@ -25,7 +25,7 @@ b{
 /* Input and select box styling */
 .boxes, select {
     padding: 8px;
-    border: 4px solid #2b5fd6;
+    border: 4px solid #2e00a1;
     border-radius: 10px;
     width: 100px;
 }
@@ -90,3 +90,47 @@ b{
     display: none;
 }
 
+.break-on-small-screen{
+    display: none;
+}
+
+.height{
+    color: #f50fc7;
+    background-color: #000000;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.weight{
+    color: #f50fc7;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+p{
+    color: rgb(32, 242, 183);
+
+}
+
+.color{
+    color: rgb(252, 6, 6);
+}
+.color-bracket{
+    
+    color: green;
+}
+
+.color-m{
+    color: green;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .break-on-small-screen{
+        display: block;
+    }
+
+
+}
