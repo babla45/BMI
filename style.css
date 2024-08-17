@@ -26,27 +26,32 @@ b{
 .boxes, select {
     padding: 8px;
     border: 4px solid #2e00a1;
-    border-radius: 10px;
+    border-radius: 50px;
     width: 100px;
+    box-shadow: 0 2px 8px pink;
+
 }
 
 
 
 /* Submit button styling */
-#submitButton, #reload {
+#submitButton{
     padding: 10px 20px;
     background-color:  #ab0ae6;
     color: white;
+    box-shadow: 0 1px 9px rgb(67, 230, 235);
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
+
 /* Refresh button styling */
 #refresh {
     padding: 10px 20px;
     background-color: #1f27f7;
     color: white;
     border: none;
+    box-shadow: 0 1px 3px ;
     border-radius: 4px;
     cursor: pointer;
     display: none;
@@ -54,8 +59,10 @@ b{
 
 }
 
-#submitButton:hover {
-    background-color: #005F6B;
+#submitButton:hover , #refresh:hover {
+    background-color: #17f1d8;
+    color: #000000;
+    font-weight: bold;
 }
 
 /* Result paragraph styling */
@@ -63,7 +70,6 @@ b{
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    /* display: none; */
     color: #1b86ce;
 }
 
@@ -77,7 +83,43 @@ b{
 
 
 
+
+
+.break-on-small-screen{
+    display: none;
+}
+
+.height, .weight{
+    color: #f50fc7;
+    background-color: #000000;
+    box-shadow: 0 4px 20px rgb(255, 11, 11);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+p{
+    color: rgb(32, 242, 183);
+    box-shadow: 0 1px 30px rgb(2, 240, 236);
+    border-radius: 50px;
+    padding: 10px;
+}
+#result{
+    color: rgb(32, 242, 183);
+    box-shadow: 0 1px 30px rgb(240, 2, 2);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+
+.txt-container{
+    display: grid;
+    place-items: center;
+}
+
 #indicator {
+    box-shadow: 0 4px 30px rgb(9, 142, 237);
     font-size: 24px;
     font-weight: bold;
     text-align: left;
@@ -88,30 +130,6 @@ b{
     border-radius: 50px;
     border: 3px solid #ccc;
     display: none;
-}
-
-.break-on-small-screen{
-    display: none;
-}
-
-.height{
-    color: #f50fc7;
-    background-color: #000000;
-    padding: 3px;
-    border-radius: 5px;
-}
-
-.weight{
-    color: #f50fc7;
-    background-color: #000;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-
-p{
-    color: rgb(32, 242, 183);
-
 }
 
 .color{
